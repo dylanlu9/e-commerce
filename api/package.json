@@ -1,0 +1,13 @@
+{
+  "name": "dylan-e-commerce-backend",
+  "version": "1.0.0",
+  "description": "Dylan's E-Commerce's backend",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Gimenez",
+  "license": "ISC"
+}
