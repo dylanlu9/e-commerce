@@ -15,6 +15,11 @@
   background-color: var(--helio-orange);
 }
 
+#navbar-logo {
+  width: 239.4px;
+  height: 90px;
+}
+
 #footer {
   width: 100vw;
   height: 100px;
