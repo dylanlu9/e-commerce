@@ -13,6 +13,8 @@
 #navbar {
   height: 100px;
   background-color: var(--helio-orange);
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 #navbar-logo {
