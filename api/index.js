@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 // Port this server will listen to.
-const ourPort = 3000;
+const ourPort = 3001;
 
 // Start the server in the port we specified.
 app.listen(ourPort, () => {
