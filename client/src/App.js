@@ -3,7 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div id="app-container">
+      <nav id="navbar"></nav>
+      <footer id="footer"></footer>
     </div>
   );
 }
