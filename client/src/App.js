@@ -1,4 +1,4 @@
-import logo from './logo-lightblue-2642-991.png';
+import logo from './logo-lightblue-2642-991-black-border.png';
 import './App.css';
 
 function App() {
