@@ -15,6 +15,7 @@
   background-color: var(--helio-orange);
   padding-left: 10px;
   padding-top: 10px;
+  border-bottom: 1px solid black;
 }
 
 #navbar-logo {
@@ -29,4 +30,5 @@
   position: fixed;
   left: 0px;
   bottom: 0px;
+  border-top: 1px solid black;
 }
