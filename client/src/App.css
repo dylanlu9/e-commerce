@@ -1,19 +1,24 @@
+:root {
+  --helio-orange: hsl(23, 88.1%, 63.7%);
+  --helio-lightblue: hsl(193, 65.9%, 75.9%);
+}
+
 #app-container {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: var(--helio-lightblue);
 }
 
 #navbar {
   height: 100px;
-  background-color: yellow;
+  background-color: var(--helio-orange);
 }
 
 #footer {
   width: 100vw;
   height: 100px;
-  background-color: green;
+  background-color: var(--helio-orange);
   position: fixed;
   left: 0px;
   bottom: 0px;
