@@ -12,6 +12,10 @@ function App() {
           <a>Contact</a>
         </div>
       </nav>
+      <div id="main-content-container">
+        <div id="products-menu-container"></div>
+        <div id="products-cards-container"></div>
+      </div>
       <footer id="footer"></footer>
     </div>
   );
