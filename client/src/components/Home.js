@@ -7,7 +7,6 @@ function Home () {
       <div id="app-container">
       <div id="main-content-container">
       </div>
-      <footer id="footer"></footer>
     </div>
    );
 }

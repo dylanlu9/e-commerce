@@ -57,13 +57,3 @@
   margin-top: 4px;
   height: calc(20% - 5px);
 }
-
-#footer {
-  width: 100vw;
-  height: 50px;
-  background-color: var(--helio-orange);
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  border-top: 1px solid black;
-}
