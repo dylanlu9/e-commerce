@@ -10,9 +10,9 @@ import { HashRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
-    <Route path='/' component={NavBar} />
     <Route exact path='/' component={App} />
     <Route path='/home' component={Home} />
+    <Route path='/' component={NavBar} />
     <Route path='/' component={Footer} />
   </HashRouter>,
   document.getElementById('root')
