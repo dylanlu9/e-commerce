@@ -14,7 +14,16 @@ function App() {
       </nav>
       <div id="main-content-container">
         <div id="products-menu-container"></div>
-        <div id="products-cards-container"></div>
+        <div id="products-cards-container">
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+          <div class="product-card"></div>
+        </div>
       </div>
       <footer id="footer"></footer>
     </div>

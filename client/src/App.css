@@ -51,7 +51,16 @@
 #products-cards-container {
   width: 62.5vw;
   height: calc(100vh - 165px);
-  background-color: white;
+  background-color: var(--helio-lightblue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.product-card {
+  background-color: var(--helio-orange);
   border: 1px solid black;
 }
 
