@@ -6,6 +6,9 @@
    border-bottom: 1px solid black;
    display: flex;
    justify-content: space-around;
+   position: fixed;
+   left: 0px;
+   top: 0px;
 }
 
 #navbar-logo {
