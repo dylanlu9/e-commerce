@@ -5,16 +5,6 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div id="app-container">
-      <nav id="navbar">
-        <Link to='/home'>
-          <img id="navbar-logo" src={logo} alt="logo"/>
-        </Link>
-        <div id="navbar-links-container">
-          <a>Products</a>
-          <a>About us</a>
-          <a>Contact</a>
-        </div>
-      </nav>
       <div id="main-content-container">
         <div id="products-menu-container"></div>
         <div id="products-cards-container">
