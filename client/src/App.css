@@ -62,6 +62,13 @@
 .product-card {
   background-color: var(--helio-orange);
   border: 1px solid black;
+  padding: 5px;
+}
+
+.product-card-image {
+  height: 80%;
+  background-color: white;
+  border: 1px solid black;
 }
 
 #footer {

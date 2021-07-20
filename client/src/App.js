@@ -15,14 +15,30 @@ function App() {
       <div id="main-content-container">
         <div id="products-menu-container"></div>
         <div id="products-cards-container">
-          <div class="product-card"></div>
-          <div class="product-card"></div>
-          <div class="product-card"></div>
-          <div class="product-card"></div>
-          <div class="product-card"></div>
-          <div class="product-card"></div>
-          <div class="product-card"></div>
-          <div class="product-card"></div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
+          <div className="product-card">
+            <div className="product-card-image"></div>
+          </div>
         </div>
       </div>
       <footer id="footer"></footer>
