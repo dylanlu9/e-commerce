@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Home from './components/Home';
+import NavBar from './components/NavBar/NavBar';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
+    <Route path='/' component={NavBar} />
     <Route exact path='/' component={App} />
     <Route path='/home' component={Home} />
   </HashRouter>,
