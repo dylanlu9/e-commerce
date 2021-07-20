@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Home from './components/Home';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
     <Route exact path='/' component={App} />
+    <Route path='/home' component={Home} />
   </HashRouter>,
   document.getElementById('root')
 );
