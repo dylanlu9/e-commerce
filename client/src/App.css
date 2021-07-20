@@ -7,7 +7,6 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: var(--helio-lightblue);
 }
 
 #navbar {
@@ -33,7 +32,7 @@
 }
 
 #main-content-container {
-  background-color: green;
+  background-color: var(--helio-lightblue);
   height: calc(100vh - 105px);
   display: flex;
   justify-content: space-between;
@@ -45,13 +44,15 @@
 #products-menu-container {
   width: 27.5vw;
   height: calc(100vh - 165px);
-  background-color: red;
+  background-color: white;
+  border: 1px solid black;
 }
 
 #products-cards-container {
   width: 62.5vw;
   height: calc(100vh - 165px);
-  background-color: blue;
+  background-color: white;
+  border: 1px solid black;
 }
 
 #footer {
