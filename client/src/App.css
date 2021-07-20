@@ -16,11 +16,20 @@
   padding-left: 5px;
   padding-top: 2.5px;
   border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
 }
 
 #navbar-logo {
   width: 119.7px;
   height: 45px;
+}
+
+#navbar-links-container {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #footer {
