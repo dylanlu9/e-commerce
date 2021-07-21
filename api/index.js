@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+const Sequelize = require('sequelize');
+
 app.get('/', (req, res) => {
    res.send("This is Dylan's E-Commerce backend.")
 });

@@ -4,7 +4,8 @@
   "description": "Dylan's E-Commerce's backend",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0"
