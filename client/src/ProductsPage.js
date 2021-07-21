@@ -1,8 +1,8 @@
 import logo from './logo-lightblue-2642-991-black-border.png';
-import './App.css';
+import './ProductsPage.css';
 import { Link } from 'react-router-dom';
 
-function App() {
+function ProductsPage() {
   return (
     <div id="app-container">
       <div id="main-content-container">
@@ -62,4 +62,4 @@ function App() {
   );
 }
 
-export default App;
+export default ProductsPage;
