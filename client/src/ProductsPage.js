@@ -1,6 +1,4 @@
-import logo from './logo-lightblue-2642-991-black-border.png';
 import './ProductsPage.css';
-import { Link } from 'react-router-dom';
 
 function ProductsPage() {
   return (
