@@ -1,4 +1,4 @@
-import './ProductsPage.css';
+import './index.css';
 
 function ProductsPage() {
   return (

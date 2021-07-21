@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ProductsPage from './page-components/ProductsPage/ProductsPage';
-import HomePage from './page-components/HomePage/HomePage';
+import ProductsPage from './page-components/ProductsPage';
+import HomePage from './page-components/HomePage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
