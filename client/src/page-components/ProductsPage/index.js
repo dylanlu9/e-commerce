@@ -1,4 +1,5 @@
 import './index.css';
+import ProductCard from '../../components/ProductCard';
 
 function ProductsPage() {
   return (
@@ -6,54 +7,14 @@ function ProductsPage() {
       <div id="main-content-container">
         <div id="products-menu-container"></div>
         <div id="products-cards-container">
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
-          <div className="product-card">
-            <div className="product-card-image"></div>
-            <div className="product-card-title-container">
-              <span>Lorem ipsum dolor sit amet, consectetur.</span>
-            </div>
-          </div>
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
         </div>
       </div>
     </div>
