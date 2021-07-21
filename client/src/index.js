@@ -10,8 +10,8 @@ import { HashRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
-    <Route exact path='/products' component={ProductsPage} />
     <Route exact path='/' component={Home} />
+    <Route exact path='/products' component={ProductsPage} />
     <Route path='/' component={NavBar} />
     <Route path='/' component={Footer} />
   </HashRouter>,
