@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ProductsPage from './ProductsPage';
+import ProductsPage from './page-components/ProductsPage/ProductsPage';
 import Home from './components/Home';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer';
