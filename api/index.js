@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
 
+require('dotenv').config();
+
 const Sequelize = require('sequelize');
-const DB_DIALECT = '-';
-const DB_USERNAME = '-';
-const DB_PASSWORD = '-';
-const DB_HOST = '-';
-const DB_PORT = 0;
-const DB_NAME = '-';
+const DB_DIALECT = process.env.DB_DIALECT;
+const DB_USERNAME = process.env.DB_USERNAME;
+const DB_PASSWORD = process.env.DB_PASSWORD;
+const DB_HOST = process.env.DB_HOST;
+const DB_PORT = process.env.DB_PORT;
+const DB_NAME = process.env.DB_NAME;
 const sequelize = new Sequelize(`${DB_DIALECT}://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`, {
    logging: (msg) => {
       console.log(`\n${msg}\n`);
