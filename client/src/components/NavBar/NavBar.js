@@ -9,7 +9,9 @@ function NavBar () {
             <img id="navbar-logo" src={logo} alt="logo"/>
          </Link>
          <div id="navbar-links-container">
-            <a>Products</a>
+            <Link to="/products">
+               <a>Products</a>
+            </Link>
             <a>About us</a>
             <a>Contact</a>
          </div>
