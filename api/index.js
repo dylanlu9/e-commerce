@@ -6,7 +6,6 @@ app.get('/', (req, res) => {
 });
 
 const ourPort = 3001;
-
 app.listen(ourPort, () => {
    console.log(`E-commerce backend listening at http://localhost:${ourPort}`);
 });
