@@ -1,5 +1,5 @@
 import logo from '../../logo-lightblue-2642-991-black-border.png';
-import './NavBar.css';
+import './index.css';
 import { Link } from 'react-router-dom';
 
 function NavBar () {

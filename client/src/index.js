@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ProductsPage from './page-components/ProductsPage/ProductsPage';
 import HomePage from './page-components/HomePage/HomePage';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
