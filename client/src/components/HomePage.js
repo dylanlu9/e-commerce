@@ -1,8 +1,8 @@
 import logo from '../logo-lightblue-2642-991-black-border.png';
-import './Home.css';
+import './HomePage.css';
 import { Link } from 'react-router-dom';
 
-function Home () {
+function HomePage () {
    return (
       <div id="app-container">
       <div id="main-content-container">
@@ -11,4 +11,4 @@ function Home () {
    );
 }
 
-export default Home;
+export default HomePage;

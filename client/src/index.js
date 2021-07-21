@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ProductsPage from './page-components/ProductsPage/ProductsPage';
-import Home from './components/Home';
+import HomePage from './components/HomePage';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +10,7 @@ import { HashRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
-    <Route exact path='/' component={Home} />
+    <Route exact path='/' component={HomePage} />
     <Route exact path='/products' component={ProductsPage} />
     <Route path='/' component={NavBar} />
     <Route path='/' component={Footer} />
