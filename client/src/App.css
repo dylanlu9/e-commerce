@@ -3,15 +3,9 @@
   --helio-lightblue: hsl(193, 65.9%, 75.9%);
 }
 
-#app-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
 #main-content-container {
   background-color: var(--helio-lightblue);
-  height: calc(100vh - 105px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +23,6 @@
 #products-cards-container {
   width: 62.5vw;
   height: calc(100vh - 165px);
-  background-color: var(--helio-lightblue);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
