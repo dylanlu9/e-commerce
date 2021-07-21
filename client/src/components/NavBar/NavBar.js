@@ -10,10 +10,10 @@ function NavBar () {
          </Link>
          <div id="navbar-links-container">
             <Link to="/products">
-               <a>Products</a>
+               <a className="navbar-link">Products</a>
             </Link>
-            <a>About us</a>
-            <a>Contact</a>
+            <a className="navbar-link">About us</a>
+            <a className="navbar-link">Contact</a>
          </div>
       </nav>
    );
