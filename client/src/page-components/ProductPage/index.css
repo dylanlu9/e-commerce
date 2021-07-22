@@ -1,9 +1,14 @@
 #product-page-main-container {
-   padding: 4vh 5vw 4vh 5vw;
+   padding-left: 5vw;
+   padding-right: 5vw;
+   height: calc(100vh - 104.1px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #product-page-main-content {
-   height: calc(100vh - 100px - 8vh);
+   height: calc(100vh - 104.1px - 8vh);
    background-color: var(--helio-orange);
    border: 1px solid black;
    display: flex;
