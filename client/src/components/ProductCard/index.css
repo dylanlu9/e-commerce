@@ -19,6 +19,7 @@
    align-items: center;
    margin-top: 4px;
    height: calc(20% - 5px);
+   text-align: center;
 }
 
 .product-card-title-link {
