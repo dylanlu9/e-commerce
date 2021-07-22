@@ -1,9 +1,9 @@
 #product-page-main-container {
-   padding: 20px 5vw 20px 5vw;
+   padding: 4vh 5vw 4vh 5vw;
 }
 
 #product-page-main-content {
-   height: calc(100vh - 140px);
+   height: calc(100vh - 100px - 8vh);
    background-color: var(--helio-orange);
    border: 1px solid black;
    display: flex;
