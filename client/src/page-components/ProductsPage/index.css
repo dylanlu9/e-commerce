@@ -1,8 +1,7 @@
 #main-content-container {
-  height: calc(100vh - 104.1px);
+  min-height: calc(100vh - 104.1px);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -17,7 +16,7 @@
 
 #products-cards-container {
   width: 62.5vw;
-  height: calc(100vh - 165px);
+  min-height: calc(100vh - 165px);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
