@@ -8,6 +8,7 @@
 }
 
 #product-page-main-content {
+   width: 66vw;
    height: calc(100vh - 104.1px - 8vh);
    background-color: var(--helio-orange);
    border: 1px solid black;
@@ -21,6 +22,7 @@
 }
 
 #product-page-product-title {
+   width: 50vw;
    font-size: 1.5em;
    font-weight: 600;
 }
