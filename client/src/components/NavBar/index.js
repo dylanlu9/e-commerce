@@ -12,8 +12,12 @@ function NavBar () {
             <Link to="/products" className="navbar-link">
                <a>Products</a>
             </Link>
-            <a>About us</a>
-            <a>Contact</a>
+            <Link to="#" className="navbar-link">
+               <a>About us</a>
+            </Link>
+            <Link to="#" className="navbar-link">
+               <a>Contact</a>
+            </Link>
          </div>
       </nav>
    );
