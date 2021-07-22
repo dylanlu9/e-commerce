@@ -12,8 +12,8 @@ function NavBar () {
             <Link to="/products" className="navbar-link">
                <a>Products</a>
             </Link>
-            <a className="navbar-link">About us</a>
-            <a className="navbar-link">Contact</a>
+            <a>About us</a>
+            <a>Contact</a>
          </div>
       </nav>
    );
