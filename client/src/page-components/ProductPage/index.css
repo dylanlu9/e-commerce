@@ -1,15 +1,15 @@
 #product-page-main-container {
    padding-left: 5vw;
    padding-right: 5vw;
-   height: calc(100vh - 104.1px);
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
 }
 
 #product-page-main-content {
    width: 66vw;
-   height: calc(100vh - 104.1px - 8vh);
    background-color: var(--helio-orange);
    border: 1px solid black;
    display: flex;
