@@ -2,8 +2,7 @@
   min-height: calc(100vh - 104.1px);
   display: flex;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
 #products-menu-container {
