@@ -125,6 +125,18 @@ const sequelizeModels = [
       options: {
          tableName: 'orderlines'
       }
+   },
+   {
+      modelName: 'Category',
+      attributes: {
+         name: {
+            type: DataTypes.STRING,
+            allowNull: false
+         }
+      },
+      options: {
+         tableName: 'categories'
+      }
    }
 ];
 
