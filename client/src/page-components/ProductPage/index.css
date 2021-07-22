@@ -1,0 +1,15 @@
+#product-page-main-container {
+   padding: 20px 5vw 20px 5vw;
+}
+
+#product-page-main-content {
+   height: calc(100vh - 140px);
+   background-color: var(--helio-orange);
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding-left: 5vw;
+   padding-right: 5vw;
+   border-radius: 10px;
+}
