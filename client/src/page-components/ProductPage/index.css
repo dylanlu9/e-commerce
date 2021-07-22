@@ -44,7 +44,7 @@
    padding-bottom: 5px;
 }
 
-#product-page-product-description-title {
+.product-page-h2 {
    font-size: 1.25em;
    font-weight: 600;
 }
@@ -56,19 +56,4 @@
 
 #product-page-second-data-container {
    width: 25vw;
-}
-
-#product-page-product-price {
-   font-size: 1.25em;
-   font-weight: 600;
-}
-
-#product-page-product-stock {
-   font-size: 1.25em;
-   font-weight: 600;
-}
-
-#product-page-product-avg-score {
-   font-size: 1.25em;
-   font-weight: 600;
 }
