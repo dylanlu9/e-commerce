@@ -9,15 +9,17 @@ function ProductPage () {
             <div id="product-page-product-info-container">
                <div id="product-page-description-container">
                   <h2 className="product-page-h2">Description:</h2>
-                  <p id="product-page-product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  {/* <p id="product-page-product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut labore et dolore magna
                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> */}
+                     <p id="product-page-product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                     sed do eiusmod tempor incididunt ut</p>
                </div>
                <div id="product-page-second-data-container">
                   <h2 className="product-page-h2">Price: $42</h2>
                   <h2 className="product-page-h2">Stock: 9</h2>
-                  <h2 className="product-page-h2">Average score:<br></br>3/5</h2>
+                  <h2 className="product-page-h2">Average<br/>score:<br/>3/5</h2>
                </div>
             </div>
          </div>
