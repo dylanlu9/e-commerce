@@ -35,12 +35,39 @@
    border-radius: 10px;
 }
 
+#product-page-product-info-container {
+   display: flex;
+}
+
+#product-page-description-container {
+   width: 25vw;
+}
+
 #product-page-product-description-title {
    font-size: 1.25em;
    font-weight: 600;
 }
 
 #product-page-product-description {
-   width: 50vw;
+   width: 23vw;
    margin-top: 0px;
+}
+
+#product-page-second-data-container {
+   width: 25vw;
+}
+
+#product-page-product-price {
+   font-size: 1.25em;
+   font-weight: 600;
+}
+
+#product-page-product-stock {
+   font-size: 1.25em;
+   font-weight: 600;
+}
+
+#product-page-product-avg-score {
+   font-size: 1.25em;
+   font-weight: 600;
 }
