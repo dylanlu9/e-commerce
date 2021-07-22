@@ -17,6 +17,7 @@
   height: calc(100vh - 165px);
   background-color: var(--helio-orange);
   border: 1px solid black;
+  border-radius: 10px;
 }
 
 #products-cards-container {
