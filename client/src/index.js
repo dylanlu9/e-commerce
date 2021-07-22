@@ -11,10 +11,10 @@ import { HashRouter, Route } from 'react-router-dom';
 
 ReactDOM.render(
   <HashRouter>
+    <Route path='/' component={NavBar} />
     <Route exact path='/' component={HomePage} />
     <Route exact path='/products' component={ProductsPage} />
     <Route exact path='/product' component={ProductPage} />
-    <Route path='/' component={NavBar} />
     <Route path='/' component={Footer} />
   </HashRouter>,
   document.getElementById('root')
