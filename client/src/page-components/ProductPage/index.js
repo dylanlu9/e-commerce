@@ -22,6 +22,35 @@ function ProductPage () {
                   <h2 className="product-page-h2">Average<br/>score:<br/>3/5</h2>
                </div>
             </div>
+            <div id="products-page-reviews-container">
+               <h2 id="product-page-reviews-h2" className="product-page-h2">Reviews</h2>
+               <div className="product-page-review">
+                  <div className="product-page-review-left-area">
+                     <div className="product-page-user-profile-picture"></div>
+                  </div>
+                  <div className="product-page-review-right-area">
+                     <span className="product-page-user-says-text">anAverageUser123 says:</span>
+                     <p className="product-page-user-review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <span className="product-page-review-score">Score: 3/5</span>
+                  </div>
+               </div>
+               <div className="product-page-review">
+                  <div className="product-page-review-left-area">
+                     <div className="product-page-user-profile-picture"></div>
+                  </div>
+                  <div className="product-page-review-right-area">
+                     <span className="product-page-user-says-text">anAverageUser123 says:</span>
+                     <p className="product-page-user-review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                     <span className="product-page-review-score">Score: 3/5</span>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    );

@@ -1,7 +1,8 @@
 #product-page-main-container {
    padding: 40px 5vw 40px 5vw;
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   align-items: center;
    min-height: calc(100vh - 100px);
 }
 
@@ -30,7 +31,7 @@
    height: 425px;
    width: 60vw;
    max-width: 425px;
-   background-color: white;
+   background-color: gainsboro;
    border: 1px solid black;
    border-radius: 10px;
 }
@@ -54,6 +55,11 @@
    font-weight: 600;
 }
 
+#product-page-reviews-h2 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
 #product-page-product-description {
    width: 23vw;
    max-width: 225px;
@@ -63,4 +69,67 @@
 #product-page-second-data-container {
    width: 25vw;
    max-width: 225px;
+}
+
+#products-page-reviews-container {
+   width: 60vw;
+   max-width: 425px;
+   background-color: white;
+   border: 1px solid gray;
+   margin-bottom: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.product-page-review {
+   width: 100%;
+   background-color: gainsboro;
+   border-top: 1px solid gray;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+.product-page-review-left-area {
+   width: 75px;
+   position: relative;
+}
+
+.product-page-user-profile-picture {
+   height: 37.5px;
+   width: 37.5px;
+   background-color: white;
+   position: absolute;
+   left: 18.75px;
+   top: 18.75px;
+   border: 1px solid gray;
+   border-radius: 10px;
+}
+
+.product-page-review-right-area {
+   width: calc(100% - 75px);
+   display: flex;
+   flex-direction: column;
+   padding-top: 13px;
+   padding-right: 18.75px;
+}
+
+.product-page-user-says-text {
+   text-align: left;
+}
+
+.product-page-user-review-text {
+   text-align: left;
+   background-color: white;
+   padding: 5px 5px 5px 10px;
+   border-radius: 10px;
+   margin-top: 15px;
+   border: 1px solid gray;
+}
+
+.product-page-review-score {
+   margin-top: -5px;
 }
