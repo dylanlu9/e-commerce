@@ -6,6 +6,7 @@ import HomePage from './page-components/HomePage';
 import ProductPage from './page-components/ProductPage';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
 
@@ -13,6 +14,7 @@ ReactDOM.render(
   <HashRouter>
     <Route path='/' component={NavBar} />
     <Route exact path='/' component={HomePage} />
+    <Route exact path='/products' component={SearchBar} />
     <Route exact path='/products' component={ProductsPage} />
     <Route exact path='/product' component={ProductPage} />
     <Route path='/' component={Footer} />
