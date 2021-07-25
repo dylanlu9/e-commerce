@@ -1,0 +1,81 @@
+#product-crud-form-main-container {
+   width: 50%;
+   height: 50%;
+   background-color: var(--helio-orange);
+   border-radius: 10px;
+   border: 1px solid black;
+   padding: 0px 20px 20px 20px;
+   margin: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.product-crud-form-h2 {
+   font-size: 1.25em;
+   font-weight: 600;
+}
+
+#product-crud-form-methods-selector-container {
+   width: 80%;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.product-crud-form-button {
+   border-radius: 10px;
+}
+
+#product-crud-form-actual-form {
+   background-color: lightgray;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid black;
+   margin-top: -10px;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+#product-crud-form-actual-form-name-input {
+   margin-top: 20px;
+}
+
+#product-crud-form-actual-form-details-input {
+   margin-top: 10px;
+}
+
+#product-crud-form-actual-form-price-input {
+   margin-top: 10px;
+}
+
+#product-crud-form-actual-form-stock-input {
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+#product-crud-form-actual-form-upload-image-button {
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+#product-crud-form-read-options-container {
+   width: 60%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 5px;
+   margin-bottom: 20px;
+}
+
+#product-crud-form-actual-form-read-name-input {
+   margin-top: -10px;
+   margin-bottom: 10px;
+}
+
+#product-crud-form-actual-form-read-submit-button {
+   
+}
