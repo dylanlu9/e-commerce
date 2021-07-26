@@ -1,9 +1,10 @@
-import './index.css';
+import styled from "styled-components";
 
-function Footer () {
-   return (
-      <footer className="footer"></footer>
-   );
-}
+const Footer = styled.footer`
+   width: 100vw;
+   height: 50px;
+   background-color: var(--helio-orange);
+   border-top: 1px solid black;
+`;
 
 export default Footer;
