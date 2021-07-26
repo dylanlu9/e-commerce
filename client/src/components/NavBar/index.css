@@ -1,4 +1,4 @@
-#navbar {
+.navbar {
    width: 100vw;
    height: 50px;
    background-color: var(--helio-orange);
@@ -9,12 +9,12 @@
    justify-content: space-around;
 }
 
-#navbar-logo {
+.navbar-logo {
    width: 119.7px;
    height: 45px;
 }
 
-#navbar-links-container {
+.navbar-links-container {
    width: 40vw;
    display: flex;
    justify-content: space-between;

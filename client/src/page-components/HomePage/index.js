@@ -3,8 +3,8 @@ import ProductCrudForm from '../../components/ProductCrudForm';
 
 function HomePage () {
    return (
-      <div id="home-page-main-container">
-         <div id="home-page-main-content">
+      <div className="home-page-main-container">
+         <div>
             <ProductCrudForm></ProductCrudForm>
          </div>
       </div>

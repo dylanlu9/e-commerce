@@ -2,9 +2,9 @@ import './index.css';
 
 function SearchBar () {
    return (
-      <div id="searchbar-main-container">
-         <input id="searchbar-search-field"></input>
-         <button id="searchbar-search-button">Search</button>
+      <div className="searchbar-main-container">
+         <input className="searchbar-search-field"></input>
+         <button className="searchbar-search-button">Search</button>
       </div>
    );
 }

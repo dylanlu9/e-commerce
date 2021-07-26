@@ -1,11 +1,11 @@
-#main-content-container {
+.main-content-container {
   min-height: calc(100vh - 104.1px);
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
 
-#products-menu-container {
+.products-menu-container {
   width: 27.5vw;
   height: calc(100vh - 165px);
   background-color: var(--helio-orange);
@@ -13,7 +13,7 @@
   border-radius: 10px;
 }
 
-#products-cards-container {
+.products-cards-container {
   width: 62.5vw;
   min-height: calc(100vh - 165px);
   display: grid;

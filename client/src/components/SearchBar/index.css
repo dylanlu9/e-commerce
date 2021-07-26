@@ -1,4 +1,4 @@
-#searchbar-main-container {
+.searchbar-main-container {
    background-color: var(--helio-orange);
    width: fit-content;
    height: 35px;
@@ -13,12 +13,12 @@
    padding-right: 5px;
 }
 
-#searchbar-search-field {
+.searchbar-search-field {
    border-radius: 10px;
    height: 20px;
 }
 
-#searchbar-search-button {
+.searchbar-search-button {
    border-radius: 10px;
    margin-left: 5px;
 }

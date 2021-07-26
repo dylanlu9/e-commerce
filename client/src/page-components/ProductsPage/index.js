@@ -3,9 +3,9 @@ import ProductCard from '../../components/ProductCard';
 
 function ProductsPage() {
   return (
-    <div id="main-content-container">
-      <div id="products-menu-container"></div>
-      <div id="products-cards-container">
+    <div className="main-content-container">
+      <div className="products-menu-container"></div>
+      <div className="products-cards-container">
         <ProductCard />
         <ProductCard />
         <ProductCard />

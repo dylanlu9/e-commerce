@@ -12,17 +12,17 @@ function ProductCrudForm () {
    switch (methodSelected) {
       case 'create':
          ProductCrudFormComponent =
-            <div id="product-crud-form-actual-form">
+            <div className="product-crud-form-actual-form">
                Product's data:
-               <input id="product-crud-form-actual-form-name-input" placeholder="Name"/>
-               <input id="product-crud-form-actual-form-details-input" placeholder="Details"/>
-               <input id="product-crud-form-actual-form-price-input"
+               <input className="product-crud-form-actual-form-name-input" placeholder="Name"/>
+               <input className="product-crud-form-actual-form-details-input" placeholder="Details"/>
+               <input className="product-crud-form-actual-form-price-input"
                   type="number" placeholder="Price"/>
-               <input id="product-crud-form-actual-form-stock-input"
+               <input className="product-crud-form-actual-form-stock-input"
                   type="number" placeholder="Stock"/>
                <span>Image:</span>
-               <button id="product-crud-form-actual-form-upload-image-button">Upload...</button>
-               <button id="product-crud-form-actual-form-submit-button">Add</button>
+               <button className="product-crud-form-actual-form-upload-image-button">Upload...</button>
+               <button>Add</button>
             </div>
          break;
       case 'read':
@@ -40,10 +40,10 @@ function ProductCrudForm () {
          }
 
          ProductCrudFormComponent =
-            <div id="product-crud-form-actual-form">
+            <div className="product-crud-form-actual-form">
 
                Select product by:
-               <div id="product-crud-form-read-options-container">
+               <div className="product-crud-form-read-options-container">
                   <div>
                      <span>Name</span>
                      <input type="radio" name="read-filter-option"
@@ -58,11 +58,11 @@ function ProductCrudForm () {
 
                { 
                   placeholder !== undefined ? 
-                  <input id="product-crud-form-actual-form-read-name-input" placeholder={placeholder}/> :
+                  <input className="product-crud-form-actual-form-read-name-input" placeholder={placeholder}/> :
                   null
                }
 
-               <button id="product-crud-form-actual-form-read-submit-button">Get</button>
+               <button>Get</button>
             </div>
          break;
 
@@ -81,10 +81,10 @@ function ProductCrudForm () {
          }
 
          ProductCrudFormComponent =
-            <div id="product-crud-form-actual-form">
+            <div className="product-crud-form-actual-form">
 
                Select product by:
-               <div id="product-crud-form-update-options-container">
+               <div>
                   <div>
                      <span>Name</span>
                      <input type="radio" name="update-filter-option"
@@ -99,11 +99,11 @@ function ProductCrudForm () {
 
                { 
                   updatePlaceholder !== undefined ? 
-                  <input id="product-crud-form-actual-form-update-name-input" placeholder={updatePlaceholder}/> :
+                  <input placeholder={updatePlaceholder}/> :
                   null
                }
 
-               <button id="product-crud-form-actual-form-update-submit-button">Select</button>
+               <button>Select</button>
             </div>;
 
          break;
@@ -115,10 +115,10 @@ function ProductCrudForm () {
    }
 
    return (
-      <div id="product-crud-form-main-container">
+      <div className="product-crud-form-main-container">
          <H2>Products CRUD form</H2>
          <span>Select the operation you want to perform:</span>
-         <div id="product-crud-form-methods-selector-container">
+         <div className="product-crud-form-methods-selector-container">
             <button
                className="product-crud-form-button"
                style={{'background-color': methodSelected === 'create' ? 'orange' : 'white'}}

@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 function NavBar () {
    return(
-      <nav id="navbar">
+      <nav className="navbar">
          <Link to='/'>
-            <img id="navbar-logo" src={logo} alt="logo"/>
+            <img className="navbar-logo" src={logo} alt="logo"/>
          </Link>
-         <div id="navbar-links-container">
+         <div className="navbar-links-container">
             <Link to="/products" className="navbar-link">
                <a>Products</a>
             </Link>
