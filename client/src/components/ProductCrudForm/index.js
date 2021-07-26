@@ -1,5 +1,6 @@
 import './index.css';
 import { useState } from 'react';
+import H2 from '../H2';
 
 function ProductCrudForm () {
 
@@ -115,7 +116,7 @@ function ProductCrudForm () {
 
    return (
       <div id="product-crud-form-main-container">
-         <h2 className="product-crud-form-h2">Products CRUD form</h2>
+         <H2>Products CRUD form</H2>
          <span>Select the operation you want to perform:</span>
          <div id="product-crud-form-methods-selector-container">
             <button

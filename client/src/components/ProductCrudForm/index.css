@@ -11,11 +11,6 @@
    align-items: center;
 }
 
-.product-crud-form-h2 {
-   font-size: 1.25em;
-   font-weight: 600;
-}
-
 #product-crud-form-methods-selector-container {
    width: 80%;
    height: 30px;
