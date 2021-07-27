@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
+dotenv.config();
 
 ReactDOM.render(
   <HashRouter>
