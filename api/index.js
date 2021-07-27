@@ -1,4 +1,5 @@
 const express = require('express');
+const jsonParser = require('body-parser').json();
 const app = express();
 
 require('dotenv').config();
