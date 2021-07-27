@@ -20,8 +20,8 @@ sequelize.sync({
    force: true
 })
    .then(() => {
-      const ourPort = 3001;
+      const serverPort = process.env.SERVER_PORT;
       app.listen(ourPort, () => {
-         console.log(`E-commerce backend listening at http://localhost:${ourPort}`);
+         console.log(`E-commerce backend listening at http://localhost:${serverPort}`);
       });
    });
