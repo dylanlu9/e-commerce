@@ -12,6 +12,14 @@ for (const model of sequelizeModels) {
    sequelize.define(modelName, attributes, options)
 }
 
+const clientPort = process.env.CLIENT_PORT;
+app.use((req, res, next) => {
+   res.set({
+      'Access-Control-Allow-Origin': `http://localhost:${clientPort}`
+   });
+   next();
+});
+
 app.get('/', (req, res) => {
    res.send("This is Dylan's E-Commerce backend.")
 });
