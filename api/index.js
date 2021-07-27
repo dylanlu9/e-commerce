@@ -15,7 +15,9 @@ for (const model of sequelizeModels) {
 const clientPort = process.env.CLIENT_PORT;
 app.use((req, res, next) => {
    res.set({
-      'Access-Control-Allow-Origin': `http://localhost:${clientPort}`
+      'Access-Control-Allow-Origin': `http://localhost:${clientPort}`,
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Allow-Methods': 'POST'
    });
    next();
 });
