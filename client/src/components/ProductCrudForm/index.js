@@ -15,7 +15,8 @@ function ProductCrudForm () {
    const [productImageToCreate, setProductImageToCreate] = useState('');
 
    async function addProduct () {
-      await fetch('http://localhost:3001/products', {
+      const { SERVER_HOST, SERVER_PORT } = process.env;
+      await fetch(`http://${SERVER_HOST}:${SERVER_PORT}/products`, {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json'
