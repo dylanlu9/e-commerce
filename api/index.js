@@ -21,7 +21,7 @@ sequelize.sync({
 })
    .then(() => {
       const serverPort = process.env.SERVER_PORT;
-      app.listen(ourPort, () => {
+      app.listen(serverPort, () => {
          console.log(`E-commerce backend listening at http://localhost:${serverPort}`);
       });
    });
