@@ -8,21 +8,49 @@ function ProductCrudForm () {
    const [readBy, setReadBy] = useState('');
    const [updateBy, setUpdateBy] = useState('');
 
+   const [productNameToCreate, setProductNameToCreate] = useState('');
+   const [productDetailsToCreate, setProductDetailsToCreate] = useState('');
+   const [productPriceToCreate, setProductPriceToCreate] = useState('');
+   const [productStockToCreate, setProductStockToCreate] = useState('');
+   const [productImageToCreate, setProductImageToCreate] = useState('');
+
+   async function addProduct () {
+      await fetch('http://localhost:3001/products', {
+         method: 'POST',
+         headers: {
+            'Content-Type': 'application/json'
+         },
+         body: JSON.stringify({
+            title: productNameToCreate,
+            category: 'Test category',
+            description: productDetailsToCreate,
+            price: parseInt(productPriceToCreate),
+            imgUrl: 'asdasdas',
+            availability: false,
+            stock: parseInt(productStockToCreate)
+         })
+      });
+   }
+
    let ProductCrudFormComponent;
    switch (methodSelected) {
       case 'create':
          ProductCrudFormComponent =
             <div className="product-crud-form-actual-form">
                Product's data:
-               <input className="product-crud-form-actual-form-name-input" placeholder="Name"/>
-               <input className="product-crud-form-actual-form-details-input" placeholder="Details"/>
+               <input className="product-crud-form-actual-form-name-input" placeholder="Name"
+                  onChange={(event) => {setProductNameToCreate(event.target.value)}}/>
+               <input className="product-crud-form-actual-form-details-input" placeholder="Details"
+                  onChange={(event) => {setProductDetailsToCreate(event.target.value)}}/>
                <input className="product-crud-form-actual-form-price-input"
-                  type="number" placeholder="Price"/>
+                  type="number" placeholder="Price"
+                  onChange={(event) => {setProductPriceToCreate(event.target.value)}}/>
                <input className="product-crud-form-actual-form-stock-input"
-                  type="number" placeholder="Stock"/>
+                  type="number" placeholder="Stock"
+                  onChange={(event) => {setProductStockToCreate(event.target.value)}}/>
                <span>Image:</span>
                <button className="product-crud-form-actual-form-upload-image-button">Upload...</button>
-               <button>Add</button>
+               <button onClick={() => {addProduct()}}>Add</button>
             </div>
          break;
       case 'read':
