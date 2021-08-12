@@ -14,22 +14,27 @@ function ProductCrudForm () {
    const [productStockToCreate, setProductStockToCreate] = useState('');
    const [productImageToCreate, setProductImageToCreate] = useState('');
 
-   async function addProduct () {
-      const { SERVER_HOST, SERVER_PORT } = process.env;
+   const [fileInput, setfileInput] = useState({});
+
+   async function handleSubmit (event) {
+      // Prepare data to send in the request.
+      const data = new FormData();
+      data.append('productData', JSON.stringify({
+         title: productNameToCreate,
+         category: 'Test category',
+         description: productDetailsToCreate,
+         price: parseInt(productPriceToCreate),
+         imgUrl: 'asdasdas',
+         availability: false,
+         stock: parseInt(productStockToCreate)
+      }));
+      data.append('image', fileInput );
+      // Send request to upload image and add product row.
+      const SERVER_HOST = process.env.REACT_APP_SERVER_HOST;
+      const SERVER_PORT = process.env.REACT_APP_SERVER_PORT;
       await fetch(`http://${SERVER_HOST}:${SERVER_PORT}/products`, {
          method: 'POST',
-         headers: {
-            'Content-Type': 'application/json'
-         },
-         body: JSON.stringify({
-            title: productNameToCreate,
-            category: 'Test category',
-            description: productDetailsToCreate,
-            price: parseInt(productPriceToCreate),
-            imgUrl: 'asdasdas',
-            availability: false,
-            stock: parseInt(productStockToCreate)
-         })
+         body: data
       });
    }
 
@@ -50,8 +55,11 @@ function ProductCrudForm () {
                   type="number" placeholder="Stock"
                   onChange={(event) => {setProductStockToCreate(event.target.value)}}/>
                <span>Image:</span>
-               <button className="product-crud-form-actual-form-upload-image-button">Upload...</button>
-               <button onClick={() => {addProduct()}}>Add</button>
+               <label className="product-crud-form-actual-form-upload-image-label">
+                  <input className="product-crud-form-actual-form-upload-image-input"
+                     type="file" onChange={e => setfileInput(e.target.files[0])}/>
+               </label>
+               <button onClick={handleSubmit}>Add</button>
             </div>
          break;
       case 'read':

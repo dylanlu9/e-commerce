@@ -53,9 +53,20 @@
    margin-bottom: 20px;
 }
 
-.product-crud-form-actual-form-upload-image-button {
+.product-crud-form-actual-form-upload-image-input {
+   visibility: hidden;
+}
+
+.product-crud-form-actual-form-upload-image-label {
    margin-top: 10px;
    margin-bottom: 20px;
+   border: 1px solid gray;
+   background-color: white;
+   width: 24px;
+   height: 24px;
+   position: relative;
+   border-radius: 10px;
+   background: url('outline_file_upload_black_24dp.png');
 }
 
 .product-crud-form-read-options-container {
