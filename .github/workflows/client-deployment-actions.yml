@@ -1,0 +1,11 @@
+name: deploy-client
+on:
+  push:
+    paths:
+      - "client/**"
+      - "!client/README.md"
+jobs:
+  mention-client-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Client deployment."

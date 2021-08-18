@@ -1,0 +1,11 @@
+name: deploy-api
+on:
+  push:
+    paths:
+      - "api/**"
+      - "!api/README.md"
+jobs:
+  mention-api-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "API deployment."
