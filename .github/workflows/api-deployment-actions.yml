@@ -9,9 +9,15 @@ jobs:
   configure-aws:
     runs-on: ubuntu-latest
     steps:
+      - run: pwd
+      - run: ls -a
+      - run: cd ~
+      - run: pwd
+      - run: ls -a
+      - run: mkdir -p .aws
       - run: mkdir -p config
-      - run: printf "[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n" "${{secrets.AWS_ACCESS_KEY_ID}}" "${{secrets.AWS_SECRET_ACCESS_KEY}}" > config/aws_credentials
-      - run: printf "[profile eb-cli]\nregion=${{secrets.AWS_DEV_REGION}}\noutput=json" > config/aws_config
+      - run: printf "[eb-cli]\naws_access_key_id = %s\naws_secret_access_key = %s\n" "${{secrets.AWS_ACCESS_KEY_ID}}" "${{secrets.AWS_SECRET_ACCESS_KEY}}" > .aws/aws_credentials
+      - run: printf "[profile eb-cli]\nregion=${{secrets.AWS_DEV_REGION}}\noutput=json" > .aws/aws_config
       - run: aws ecr get-login-password --region ${{secrets.AWS_DEV_REGION}} > config/docker_login
       - run: ls
       - run: cd config
