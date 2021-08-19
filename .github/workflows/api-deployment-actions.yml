@@ -4,6 +4,7 @@ on:
     paths:
       - "api/**"
       - "!api/README.md"
+  workflow_dispatch:
 jobs:
   mention-api-deployment:
     runs-on: ubuntu-latest
