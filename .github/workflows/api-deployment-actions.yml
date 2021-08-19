@@ -27,7 +27,7 @@ jobs:
           name: aws_config
           path: config/aws_config
   get-aws-ecr-token:
-    runs-on: bitnami/aws-cli
+    runs-on: ubuntu-latest
     needs: prepare-aws-creds-and-config
     steps:
       - name: Download the AWS credentials file to use the AWS CLI
