@@ -81,3 +81,4 @@ sequelize.sync({
          console.log(`E-commerce backend listening at http://localhost:${serverPort}`);
       });
    });
+
