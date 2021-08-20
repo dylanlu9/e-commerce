@@ -9,33 +9,26 @@ jobs:
   configure-aws:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: |
-          pwd
-          ls
-          cd ..
-          pwd
-          ls
-          cd ..
-          pwd
-          ls
-          cd ..
-          pwd
-          ls
-          cd ..
-          pwd
-          ls
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_DEV_REGION }}
+      - name: Get repository source code
+        uses: actions/checkout@v2
       - run: |
+          pwd
+          ls
+          cd api
+          pwd
+          ls
           mkdir -p config
           ls
           aws ecr get-login-password --region ${{secrets.AWS_DEV_REGION}} > config/docker_login
           cd config
           pwd
           ls
-  
+          cat docker_login
+          cd ..
+          bash -e eb/build_and_push_images.sh ${{github.sha}} ${{secrets.AWS_ECR_REPO_URL}}
