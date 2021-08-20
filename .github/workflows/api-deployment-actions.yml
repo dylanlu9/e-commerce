@@ -9,28 +9,30 @@ jobs:
   configure-aws:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: ls
-      - run: cd ..
-      - run: pwd
-      - run: ls
-      - run: cd e-commerce
-      - run: pwd
-      - run: ls
+      - run: |
+          pwd
+          ls
+          cd ..
+          pwd
+          ls
+          cd "e-commerce"
+          pwd
+          ls
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_DEV_REGION }}
-      - run: mkdir -p config
-      - run: ls
-      - run: aws ecr get-login-password --region ${{secrets.AWS_DEV_REGION}} > config/docker_login
-      - run: ls
-      - run: cd config
-      - run: pwd
-      - run: ls
-      - run: cd config
-      - run: pwd
-      - run: ls
+      - run: |
+        mkdir -p config
+        ls
+        aws ecr get-login-password --region ${{secrets.AWS_DEV_REGION}} > config/docker_login
+        ls
+        cd config
+        pwd
+        ls
+        cd config
+        pwd
+        ls
   
