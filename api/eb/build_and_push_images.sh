@@ -1,7 +1,7 @@
 #!/bin/bash
 TAG=${1-latest}
 REPO=${2-latest}
-IMAGE_NAME="helio-e-commerce-api"
+IMAGE_NAME="helio-e-commerce-api-dev"
 DIRECTORY="."
 
 cat config/docker_login | docker login --username AWS --password-stdin $REPO
