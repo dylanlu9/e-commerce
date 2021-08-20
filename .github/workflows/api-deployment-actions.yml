@@ -15,7 +15,13 @@ jobs:
           cd ..
           pwd
           ls
-          cd "e-commerce"
+          cd ..
+          pwd
+          ls
+          cd ..
+          pwd
+          ls
+          cd ..
           pwd
           ls
       - name: Configure AWS Credentials
@@ -28,10 +34,6 @@ jobs:
           mkdir -p config
           ls
           aws ecr get-login-password --region ${{secrets.AWS_DEV_REGION}} > config/docker_login
-          ls
-          cd config
-          pwd
-          ls
           cd config
           pwd
           ls
