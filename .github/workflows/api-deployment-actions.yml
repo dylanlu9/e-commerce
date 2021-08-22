@@ -6,7 +6,6 @@ on:
       - "!api/.dockerignore"
       - "!api/.gitignore"
       - "!api/README.md"
-      - "!eb/build_and_push_image.sh"
   workflow_dispatch:
 jobs:
   configure-aws:
