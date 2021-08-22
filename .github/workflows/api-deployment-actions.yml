@@ -10,17 +10,19 @@ jobs:
   configure-aws:
     runs-on: ubuntu-latest
     steps:
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
       - name: Get repository source code
         uses: actions/checkout@v2
       - run: |
+          pwd
+          ls
           cd api
+          pwd
+          ls
+          echo "Zipping..."
           zip -r deploy.zip . -x '*.git*'
+          pwd
+          ls
+          echo "Installing beantalk-deploy..."
           npm install -g beanstalk-deploy
-          echo "Hi."
-          beanstalk-deplo
+          echo "Running beanstalk-deploy..."
+          beanstalk-deploy
