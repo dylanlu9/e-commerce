@@ -22,4 +22,4 @@ jobs:
           cd api
           zip -r deploy.zip . -x '*.git*'
           npm install -g beanstalk-deploy
-          beanstalk-deploy helio-e-commerce-api Helioecommerceapi-env 1 us-east-2 deploy.zip
+          beanstalk-deploy helio-e-commerce-api Helioecommerceapi-env ${{github.sha}} us-east-2 deploy.zip
