@@ -12,17 +12,21 @@ jobs:
     steps:
       - name: Get repository source code
         uses: actions/checkout@v2
-      - run: |
-          pwd
-          ls
+
+      - name: Generate deployment package
+        run: |
           cd api
           pwd
-          ls
-          echo "Zipping..."
           zip -r deploy.zip . -x '*.git*'
-          pwd
           ls
-          echo "Installing beantalk-deploy..."
-          npm install -g beanstalk-deploy
-          echo "Running beanstalk-deploy..."
-          beanstalk-deploy
+
+      - name: Deploy to EB
+        uses: einaregilsson/beanstalk-deploy@v18
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: helio-e-commerce-api
+          environment_name: Helioecommerceapi-env
+          version_label: 3
+          region: ${{ secrets.AWS_REGION }}
+          deployment_package: api/deploy.zip
