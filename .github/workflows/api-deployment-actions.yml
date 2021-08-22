@@ -26,5 +26,4 @@ jobs:
           cd api
           zip -r deploy.zip . -x '*.git*'
           npm install -g beanstalk-deploy
-          echo ${{ secrets.AWS_DEV_REGION }}
           beanstalk-deploy helio-e-commerce-api Helioecommerceapi-env "$COMMIT_SHA" "$AWS_REGION" deploy.zip
