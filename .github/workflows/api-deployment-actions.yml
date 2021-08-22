@@ -23,4 +23,4 @@ jobs:
           zip -r deploy.zip . -x '*.git*'
           npm install -g beanstalk-deploy
           echo "Hi."
-          beanstalk-deploy
+          beanstalk-deplo
