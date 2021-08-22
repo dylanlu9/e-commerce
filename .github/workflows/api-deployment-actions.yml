@@ -27,6 +27,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: helio-e-commerce-api
           environment_name: Helioecommerceapi-env
-          version_label: 3
+          version_label: ${{ github.sha }}
           region: ${{ secrets.AWS_REGION }}
           deployment_package: api/deploy.zip
