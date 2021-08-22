@@ -63,7 +63,7 @@ app.post('/products', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-   res.send("This is Dylan's E-Commerce backend.")
+   res.send("This is Dylan's E-Commerce backend. 2021/08/22.")
 });
 
 app.post('/products', jsonParser, async (req, res) => {
