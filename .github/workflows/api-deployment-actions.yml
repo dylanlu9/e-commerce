@@ -18,9 +18,13 @@ jobs:
           aws-region: ${{ secrets.AWS_DEV_REGION }}
       - name: Get repository source code
         uses: actions/checkout@v2
-      - run: |
+      - shell: bash
+        env:
+          COMMIT_SHA: ${{ github.sha }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+        run: |
           cd api
           zip -r deploy.zip . -x '*.git*'
           npm install -g beanstalk-deploy
           echo ${{ secrets.AWS_DEV_REGION }}
-          beanstalk-deploy helio-e-commerce-api Helioecommerceapi-env ${{github.sha}} ${{secrets.AWS_DEV_REGION}} deploy.zip
+          beanstalk-deploy helio-e-commerce-api Helioecommerceapi-env "$COMMIT_SHA" "$AWS_REGION" deploy.zip
