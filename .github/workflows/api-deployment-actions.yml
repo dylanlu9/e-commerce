@@ -16,9 +16,7 @@ jobs:
       - name: Generate deployment package
         run: |
           cd api
-          pwd
           zip -r deploy.zip . -x '*.git*'
-          ls
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v18
