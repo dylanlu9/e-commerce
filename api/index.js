@@ -66,12 +66,6 @@ app.get('/', (req, res) => {
    res.send("This is Dylan's E-Commerce backend. 2021/08/22.")
 });
 
-app.post('/products', jsonParser, async (req, res) => {
-   const ProductModel = sequelize.models.Product;
-   await ProductModel.create(req.body);
-   res.send('Product creation process ended.');
-});
-
 sequelize.sync({
    force: true
 })
