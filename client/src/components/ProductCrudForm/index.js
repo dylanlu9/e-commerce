@@ -31,8 +31,7 @@ function ProductCrudForm () {
       data.append('image', fileInput );
       // Send request to upload image and add product row.
       const SERVER_HOST = process.env.REACT_APP_SERVER_HOST;
-      const SERVER_PORT = process.env.REACT_APP_SERVER_PORT;
-      await fetch(`http://${SERVER_HOST}:${SERVER_PORT}/products`, {
+      await fetch(`http://${SERVER_HOST}/products`, {
          method: 'POST',
          body: data
       });
