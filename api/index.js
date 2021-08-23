@@ -67,7 +67,7 @@ app.get('/', (req, res) => {
 });
 
 sequelize.sync({
-   force: true
+   force: false
 })
    .then(() => {
       const serverPort = process.env.SERVER_PORT;
