@@ -66,6 +66,11 @@ app.get('/', (req, res) => {
    res.send("This is Dylan's E-Commerce backend. 2021/08/22.")
 });
 
+app.get('/.well-known/pki-validation/0568D89E761283D7A6E226C48BB352D6.txt', (req, res) => {
+   const file = `${__dirname}/uploaded-files/0568D89E761283D7A6E226C48BB352D6.txt`;
+   res.download(file);
+});
+
 sequelize.sync({
    force: false
 })
