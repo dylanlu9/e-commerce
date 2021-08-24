@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo certbot -n -d helioecommerceapi-env.eba-zbtdurnu.us-east-2.elasticbeanstalk.com --nginx --agree-tos --email lu9fdn@gmail.com
+sudo certbot -n -d helio-group.e-commerce.api.com --nginx --agree-tos --email dylan.gimenez.nahuel@gmail.com
