@@ -2,14 +2,16 @@ import ProductCrudForm from '../../components/ProductCrudForm';
 
 function HomePage () {
    return (
-      <div style={style}>
+      <div style={styles.mainContainer}>
          <ProductCrudForm/>
       </div>
    );
 }
 
-const style = {
-   minHeight: 'calc(100vh - 104.1px)'
+const styles = {
+   mainContainer: {
+      minHeight: 'calc(100vh - 104.1px)'
+   }
 };
 
 export default HomePage;
