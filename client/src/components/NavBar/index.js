@@ -1,26 +1,53 @@
 import logo from '../../logo-lightblue-2642-991-black-border.png';
-import './index.css';
 import { Link } from 'react-router-dom';
 
 function NavBar () {
    return(
-      <nav className="navbar">
+      <nav style={styles.mainContainer}>
          <Link to='/'>
-            <img className="navbar-logo" src={logo} alt="logo"/>
+            <img style={styles.logo} src={logo} alt="logo"/>
          </Link>
-         <div className="navbar-links-container">
-            <Link to="/products" className="navbar-link">
+         <div style={styles.linksContainer}>
+            <Link to="/products" style={styles.link}>
                <a>Products</a>
             </Link>
-            <Link to="#" className="navbar-link">
+            <Link to="#" style={styles.link}>
                <a>About us</a>
             </Link>
-            <Link to="#" className="navbar-link">
+            <Link to="#" style={styles.link}>
                <a>Contact</a>
             </Link>
          </div>
       </nav>
    );
 }
+
+const styles = {
+   mainContainer: {
+      width: '100vw',
+      height: '50px',
+      backgroundColor: 'var(--helio-orange)',
+      paddingLeft: '5px',
+      paddingTop: '2.5px',
+      borderBottom: '1px solid black',
+      display: 'flex',
+      justifyContent: 'space-around',
+   },
+   logo: {
+      width: '119.7px',
+      height: '45px',
+   },
+   linksContainer: {
+      width: '40vw',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+   },
+   link: {
+      color: 'black',
+      textDecoration: 'none',
+      fontWeight: '600',
+   },
+};
 
 export default NavBar;

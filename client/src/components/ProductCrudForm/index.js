@@ -1,6 +1,6 @@
-import './index.css';
 import { useState } from 'react';
 import H2 from '../H2';
+import UploadImageIcon from './outline_file_upload_black_24dp.png';
 
 function ProductCrudForm () {
 
@@ -41,21 +41,21 @@ function ProductCrudForm () {
    switch (methodSelected) {
       case 'create':
          ProductCrudFormComponent =
-            <div className="product-crud-form-actual-form">
+            <div style={styles.actualForm}>
                Product's data:
-               <input className="product-crud-form-actual-form-name-input" placeholder="Name"
+               <input style={styles.actualFormNameInput} placeholder="Name"
                   onChange={(event) => {setProductNameToCreate(event.target.value)}}/>
-               <input className="product-crud-form-actual-form-details-input" placeholder="Details"
+               <input style={styles.actualFormDetailsInput} placeholder="Details"
                   onChange={(event) => {setProductDetailsToCreate(event.target.value)}}/>
-               <input className="product-crud-form-actual-form-price-input"
+               <input style={styles.actualFormPriceInput}
                   type="number" placeholder="Price"
                   onChange={(event) => {setProductPriceToCreate(event.target.value)}}/>
-               <input className="product-crud-form-actual-form-stock-input"
+               <input style={styles.actualFormStockInput}
                   type="number" placeholder="Stock"
                   onChange={(event) => {setProductStockToCreate(event.target.value)}}/>
                <span>Image:</span>
-               <label className="product-crud-form-actual-form-upload-image-label">
-                  <input className="product-crud-form-actual-form-upload-image-input"
+               <label style={styles.actualFormUploadImageLabel}>
+                  <input style={styles.actualFormUploadImageInput}
                      type="file" onChange={e => setfileInput(e.target.files[0])}/>
                </label>
                <button onClick={handleSubmit}>Add</button>
@@ -76,10 +76,10 @@ function ProductCrudForm () {
          }
 
          ProductCrudFormComponent =
-            <div className="product-crud-form-actual-form">
+            <div style={styles.actualForm}>
 
                Select product by:
-               <div className="product-crud-form-read-options-container">
+               <div style={styles.readOptionsContainer}>
                   <div>
                      <span>Name</span>
                      <input type="radio" name="read-filter-option"
@@ -94,7 +94,7 @@ function ProductCrudForm () {
 
                { 
                   placeholder !== undefined ? 
-                  <input className="product-crud-form-actual-form-read-name-input" placeholder={placeholder}/> :
+                  <input style={styles.actualFormReadNameInput} placeholder={placeholder}/> :
                   null
                }
 
@@ -117,7 +117,7 @@ function ProductCrudForm () {
          }
 
          ProductCrudFormComponent =
-            <div className="product-crud-form-actual-form">
+            <div style={styles.actualForm}>
 
                Select product by:
                <div>
@@ -151,31 +151,27 @@ function ProductCrudForm () {
    }
 
    return (
-      <div className="product-crud-form-main-container">
+      <div style={styles.mainContainer}>
          <H2>Products CRUD form</H2>
          <span>Select the operation you want to perform:</span>
-         <div className="product-crud-form-methods-selector-container">
+         <div style={styles.methodsSelectorContainer}>
             <button
-               className="product-crud-form-button"
-               style={{'background-color': methodSelected === 'create' ? 'orange' : 'white'}}
+               style={methodSelected === 'create' ? styles.buttonSelected : styles.button }
                onClick={() => setMethodSelected('create')}>
                Create
             </button>
             <button 
-               className="product-crud-form-button"
-               style={{'background-color': methodSelected === 'read' ? 'orange' : 'white'}}
+               style={methodSelected === 'read' ? styles.buttonSelected : styles.button }    
                onClick={() => setMethodSelected('read')}>
                Read
             </button>
             <button
-               className="product-crud-form-button"
-               style={{'background-color': methodSelected === 'update' ? 'orange' : 'white'}}
+               style={methodSelected === 'update' ? styles.buttonSelected : styles.button }
                onClick={() => setMethodSelected('update')}>
                Update
             </button>
             <button
-               className="product-crud-form-button"
-               style={{'background-color': methodSelected === 'delete' ? 'orange' : 'white'}}
+               style={methodSelected === 'delete' ? styles.buttonSelected : styles.button }
                onClick={() => setMethodSelected('delete')}>
                Delete
             </button>
@@ -185,5 +181,84 @@ function ProductCrudForm () {
       </div>
    );
 }
+
+const styles = {
+   mainContainer: {
+      width: '50%',
+      height: '50%',
+      backgroundColor: 'var(--helio-orange)',
+      borderRadius: '10px',
+      border: '1px solid black',
+      padding: '0px 20px 20px 20px',
+      margin: '20px',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+   },
+   methodsSelectorContainer: {
+      width: '80%',
+      height: '30px',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginTop: '10px',
+   },
+   button: {
+      borderRadius: '10px',
+   },
+   buttonSelected: {
+      borderRadius: '10px',
+      backgroundColor: 'orange',
+   },
+   actualForm: {
+      backgroundColor: 'lightgray',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      border: '1px solid black',
+      marginTop: '-10px',
+      padding: '20px',
+      borderRadius: '10px',
+   },
+   actualFormNameInput: {
+      marginTop: '20px',
+   },
+   actualFormDetailsInput: {
+      marginTop: '10px',
+   },
+   actualFormPriceInput: {
+      marginTop: '10px',
+   },
+   actualFormStockInput: {
+      marginTop: '10px',
+      marginBottom: '20px',
+   },
+   actualFormUploadImageInput: {
+      visibility: 'hidden',
+   },
+   actualFormUploadImageLabel: {
+      marginTop: '10px',
+      marginBottom: '20px',
+      border: '1px solid gray',
+      backgroundColor: 'white',
+      width: '24px',
+      height: '24px',
+      position: 'relative',
+      borderRadius: '10px',
+      background: `url(${UploadImageIcon})`,
+   },
+   readOptionsContainer: {
+      width: '60%',
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginTop: '5px',
+      marginBottom: '20px',
+   },
+   actualFormReadNameInput: {
+      marginTop: '-10px',
+      marginBottom: '10px',
+   },
+};
 
 export default ProductCrudForm;
