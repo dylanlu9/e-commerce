@@ -9,10 +9,6 @@ function ProductPage () {
             <div style={styles.productInfoContainer}>
                <div style={styles.descriptionContainer}>
                   <H2>Description:</H2>
-                  {/* <p style={styles.productDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                     sed do eiusmod tempor incididunt ut labore et dolore magna
-                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> */}
                      <p style={styles.productDescription}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                      sed do eiusmod tempor incididunt ut</p>
                </div>
