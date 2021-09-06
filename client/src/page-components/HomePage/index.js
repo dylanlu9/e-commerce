@@ -3,9 +3,7 @@ import ProductCrudForm from '../../components/ProductCrudForm';
 function HomePage () {
    return (
       <div style={style}>
-         <div>
-            <ProductCrudForm/>
-         </div>
+         <ProductCrudForm/>
       </div>
    );
 }
