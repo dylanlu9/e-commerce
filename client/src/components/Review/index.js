@@ -1,18 +1,15 @@
-function Review () {
+function Review (props) {
    return (
       <div style={styles.mainContainer}>
          <div style={styles.leftArea}>
             <div style={styles.userProfilePicture}></div>
          </div>
          <div style={styles.rightArea}>
-            <span style={styles.userSaysText}>anAverageUser123 says:</span>
+            <span style={styles.userSaysText}>{props.username} says:</span>
                <p style={styles.userReviewText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua.
+                  {props.content}
                </p>
-            <span style={styles.score}>Score: 3/5</span>
+            <span style={styles.score}>Score: {props.score}/5</span>
          </div>
       </div>
    );

@@ -21,8 +21,22 @@ function ProductPage () {
             </div>
             <div style={styles.reviewsContainer}>
                <H2 style={styles.reviewsH2}>Reviews</H2>
-               <Review/>
-               <Review/>
+               <Review
+                  username="Dylan"
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua."
+                  score="4"
+               />
+               <Review
+                  username="Nahuel"
+                  content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua."
+                  score="2"
+               />
             </div>
          </div>
       </div>
