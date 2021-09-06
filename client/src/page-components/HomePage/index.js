@@ -4,7 +4,7 @@ function HomePage () {
    return (
       <div style={style}>
          <div>
-            <ProductCrudForm></ProductCrudForm>
+            <ProductCrudForm/>
          </div>
       </div>
    );
