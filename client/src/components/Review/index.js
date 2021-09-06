@@ -1,10 +1,10 @@
 function Review () {
    return (
-      <div style={styles.review}>
-         <div style={styles.reviewLeftArea}>
+      <div style={styles.mainContainer}>
+         <div style={styles.leftArea}>
             <div style={styles.userProfilePicture}></div>
          </div>
-         <div style={styles.reviewRightArea}>
+         <div style={styles.rightArea}>
             <span style={styles.userSaysText}>anAverageUser123 says:</span>
                <p style={styles.userReviewText}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -12,14 +12,14 @@ function Review () {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.
                </p>
-            <span style={styles.reviewScore}>Score: 3/5</span>
+            <span style={styles.score}>Score: 3/5</span>
          </div>
       </div>
    );
 }
 
 const styles = {
-   review: {
+   mainContainer: {
       width: '100%',
       backgroundColor: 'gainsboro',
       borderTop: '1px solid gray',
@@ -27,7 +27,7 @@ const styles = {
       justifyContent: 'center',
       paddingBottom: '10px',
    },
-   reviewLeftArea: {
+   leftArea: {
       width: '75px',
       position: 'relative',
    },
@@ -41,7 +41,7 @@ const styles = {
       border: '1px solid gray',
       borderRadius: '10px',
    },
-   reviewRightArea: {
+   rightArea: {
       width: 'calc(100% - 75px)',
       display: 'flex',
       flexDirection: 'column',
@@ -59,7 +59,7 @@ const styles = {
       marginTop: '15px',
       border: '1px solid gray',
    },
-   reviewScore: {
+   score: {
       marginTop: '-5px',
    },
 };
