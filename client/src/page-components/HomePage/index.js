@@ -1,9 +1,9 @@
-import ProductCrudForm from '../../components/ProductCrudForm';
-
 function HomePage () {
    return (
       <div style={styles.mainContainer}>
-         <ProductCrudForm/>
+         <button style={styles.button}>
+            Admin panel
+         </button>
       </div>
    );
 }
@@ -11,7 +11,14 @@ function HomePage () {
 const styles = {
    mainContainer: {
       minHeight: 'calc(100vh - 104.1px)'
-   }
+   },
+   button: {
+      backgroundColor: 'var(--helio-orange)',
+      borderRadius: '5px',
+      margin: '15px',
+      padding: '5px',
+      fontWeight: '600',
+   },
 };
 
 export default HomePage;
