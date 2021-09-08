@@ -1,12 +1,23 @@
 import { useAuth0 } from '@auth0/auth0-react';
 
 function HomePage () {
-   const { loginWithRedirect } = useAuth0();
+   const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
    return (
       <div style={styles.mainContainer}>
-         <button style={styles.button} onClick={() => loginWithRedirect()}>
-            Admin panel
-         </button>
+         {
+            isAuthenticated ?
+            <button style={styles.button} onClick={() => logout({
+               returnTo: window.location.origin,
+            })}>
+               Log out
+            </button>
+            :
+            <button style={styles.button} onClick={() => loginWithRedirect({
+               redirectUri: `${process.env.REACT_APP_CLIENT_HOST}/admin/`
+            })}>
+               Admin panel
+            </button>
+         }
       </div>
    );
 }
