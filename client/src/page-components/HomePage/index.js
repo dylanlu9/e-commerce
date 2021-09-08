@@ -1,7 +1,10 @@
+import { useAuth0 } from '@auth0/auth0-react';
+
 function HomePage () {
+   const { loginWithRedirect } = useAuth0();
    return (
       <div style={styles.mainContainer}>
-         <button style={styles.button}>
+         <button style={styles.button} onClick={() => loginWithRedirect()}>
             Admin panel
          </button>
       </div>

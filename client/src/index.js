@@ -10,16 +10,19 @@ import Footer from './components/Footer';
 import SearchBar from './components/SearchBar';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Route } from 'react-router-dom';
+import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
 dotenv.config();
 
 ReactDOM.render(
   <HashRouter>
-    <Route path='/' component={NavBar} />
-    <Route exact path='/' component={HomePage} />
-    <Route exact path='/products' component={SearchBar} />
-    <Route exact path='/products' component={ProductsPage} />
-    <Route exact path='/product' component={ProductPage} />
-    <Route path='/' component={Footer} />
+    <Auth0ProviderWithHistory>
+      <Route path='/' component={NavBar} />
+      <Route exact path='/' component={HomePage} />
+      <Route exact path='/products' component={SearchBar} />
+      <Route exact path='/products' component={ProductsPage} />
+      <Route exact path='/product' component={ProductPage} />
+      <Route path='/' component={Footer} />
+    </Auth0ProviderWithHistory>
   </HashRouter>,
   document.getElementById('root')
 );
