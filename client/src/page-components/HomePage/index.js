@@ -14,12 +14,11 @@ function HomePage () {
                Log out
             </button>
             :
-            <button style={styles.button} onClick={() => {
-               history.push('/admin');
-            }}>
-               Admin panel
-            </button>
+            null
          }
+         <button style={styles.button} onClick={() => history.push('/admin')}>
+            Admin panel
+         </button>
       </div>
    );
 }
