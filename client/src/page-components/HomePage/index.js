@@ -1,7 +1,9 @@
 import { useAuth0 } from '@auth0/auth0-react';
+import { useHistory } from 'react-router-dom';
 
 function HomePage () {
-   const { loginWithRedirect, isAuthenticated, logout } = useAuth0();
+   const { isAuthenticated, logout } = useAuth0();
+   const history = useHistory();
    return (
       <div style={styles.mainContainer}>
          {
@@ -12,9 +14,9 @@ function HomePage () {
                Log out
             </button>
             :
-            <button style={styles.button} onClick={() => loginWithRedirect({
-               redirectUri: `${process.env.REACT_APP_CLIENT_HOST}/admin/`
-            })}>
+            <button style={styles.button} onClick={() => {
+               history.push('/admin');
+            }}>
                Admin panel
             </button>
          }
